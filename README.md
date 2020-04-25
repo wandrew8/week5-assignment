@@ -21,7 +21,7 @@ You may choose from one of the following APIs.
 
 Please note that these APIs will rate-limit you. Read the documentation and be aware of the rate-limiting enabled on each API. If you find yourself calling the API too many times, look into downloading an example response and use that while building out your app, or waiting.
 
-> Up for an adventure? There are other APIs [here](https://github.com/toddmotto/public-apis) that you can choose from _at your own risk_, such as the [Dog API](https://dog.ceo/dog-api/documentation/). Note that if you decide to pick a different API, read up on rate-limiting or any other restrictions for that API. Also **pick an API with no auth and CORS enabled**. Otherwise, you will likely run into CORS issues that could block your completion of the assignment.
+> Up for an adventure? There are other APIs [here](https://github.com/toddmotto/public-apis) that you can choose from _at your own risk_, such as the [Dog API](https://dog.ceo/dog-api/documentation/). Note that if you decide to pick a different API, read up on rate-limiting or any other restrictions for that API. Also **pick an API with CORS enabled**. Otherwise, you will likely run into CORS issues that could block your completion of the assignment. Also, if you use an API requiring an auth token, it's recommended that you not commit these tokens to source code. Use [environment variables](https://create-react-app.dev/docs/adding-custom-environment-variables/) instead, and ensure you add the `.env` file to your `.gitignore` file.
 
 ### Requirements
 
