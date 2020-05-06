@@ -1,4 +1,10 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import NavBar from '../components/NavBar';
+import Hero from '../components/Hero';
+import SearchBar from '../components/SearchBar';
+import Pagination from '../components/Pagination';
+import '../App.scss';
+
 
 export default class Home extends Component {
     constructor(props) {
@@ -6,28 +12,53 @@ export default class Home extends Component {
         this.state = {
             isLoading: true,
             data: {},
-            errMess: ''
+            errMess: '',
+            currentPage: 1,
+            totalPages: 1,
         }
     }
 
     componentDidMount() {
+        this.fetchData();
+    }
+
+    fetchData() {
         const key = process.env.REACT_APP_API_KEY
         fetch(`https://www.superheroapi.com/api.php/${key}/search/t`)
         .then(res => res.json())
         .then(data => {
             console.log(data);
-            this.setState({ data: data, isLoading: false });
+            let pages = [];
+            while(data.results.length) {
+                pages.push(data.results.splice(0,25))
+            }
+            this.setState({ data: pages, totalPages: pages.length, isLoading: false });
         })
         .catch(err => {
             this.setState({ isLoading: false, errMess: "Oops, something's not right"})
         })
     }
 
+    nextPage = () => {
+        if (this.state.currentPage + 1 <= this.state.totalPages) {
+            this.setState({ currentPage: this.state.currentPage + 1 });
+        }
+    }
+
+    prevPage = () => {
+        if(this.state.currentPage - 1 > 0) {
+            this.setState({ currentPage: this.state.currentPage - 1 });
+        }
+    }
+
     render() {
         
         return (
             <div>
-                {this.state.isLoading ? <div>Loading...</div> : this.state.data.results.map(hero => {
+                <NavBar />
+                <Hero />
+                <SearchBar />
+                {this.state.isLoading ? <div>Loading...</div> : this.state.data[this.state.currentPage - 1].map(hero => {
                     return (
                         <div>
                             <h2>{hero.name}</h2>
@@ -35,6 +66,7 @@ export default class Home extends Component {
                         </div>
                     )
                 })}
+                <Pagination currentPage={this.state.currentPage} totalPages={this.state.data.length} nextPage={this.nextPage} prevPage={this.prevPage} />
             </div>
         )
     }
