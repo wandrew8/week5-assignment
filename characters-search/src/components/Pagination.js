@@ -10,16 +10,20 @@ export default class Pagination extends Component {
     }
 
     render() {
+        const {nextPage, prevPage, totalPages, currentPage } = this.props;
+        const currentPageStyle = {color: "black", backgroundColor: "white", borderRadius: "2px" }
         return (
-            <nav aria-label="Page navigation example">
-                <ul>
-                    <li onClick={this.props.prevPage}>Previous</li>
-                    <li onClick={this.props.prevPage}>{this.props.currentPage > 1 ? this.props.currentPage - 1 : "<"}</li>
-                    <li>{this.props.currentPage}</li>
-                    <li onClick={this.props.nextPage}>{this.props.currentPage >= this.props.totalPages ? ">" : this.props.currentPage + 1}</li>
-                    <li onClick={this.props.nextPage}>Next</li>
-                </ul>
-            </nav>
+            <React.Fragment>
+                {totalPages > 1 ? <nav className="pagination">
+                    <ul>
+                        <li onClick={prevPage}>Previous</li>
+                        <li style={currentPage - 1 === 0 ? currentPageStyle : null} >{currentPage - 1 === 0 ? currentPage : currentPage + 1 <= totalPages ? currentPage - 1 : currentPage - 2}</li>
+                        <li style={currentPage - 1 > 0 && currentPage + 1 <= totalPages ? currentPageStyle : null } >{currentPage - 1 === 0 ? currentPage + 1 : currentPage + 1 <= totalPages ? currentPage : currentPage - 1}</li>
+                        <li style={currentPage === totalPages ? currentPageStyle : null } >{currentPage - 1 === 0 ? currentPage + 2 : currentPage + 1 <= totalPages ? currentPage + 1 : currentPage}</li>
+                        <li onClick={nextPage}>Next</li>
+                    </ul>
+                </nav> : null}
+            </React.Fragment>
         )
     }
 }
