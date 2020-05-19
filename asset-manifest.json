@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/github.io/week5-assignemnt/static/css/main.02e52eed.chunk.css",
-    "main.js": "/github.io/week5-assignemnt/static/js/main.15d19601.chunk.js",
-    "main.js.map": "/github.io/week5-assignemnt/static/js/main.15d19601.chunk.js.map",
-    "runtime-main.js": "/github.io/week5-assignemnt/static/js/runtime-main.8e7dc6dd.js",
-    "runtime-main.js.map": "/github.io/week5-assignemnt/static/js/runtime-main.8e7dc6dd.js.map",
-    "static/js/2.78950811.chunk.js": "/github.io/week5-assignemnt/static/js/2.78950811.chunk.js",
-    "static/js/2.78950811.chunk.js.map": "/github.io/week5-assignemnt/static/js/2.78950811.chunk.js.map",
-    "index.html": "/github.io/week5-assignemnt/index.html",
-    "precache-manifest.9e359119d66a72e6f69fd203ffd3bcf7.js": "/github.io/week5-assignemnt/precache-manifest.9e359119d66a72e6f69fd203ffd3bcf7.js",
-    "service-worker.js": "/github.io/week5-assignemnt/service-worker.js",
-    "static/css/main.02e52eed.chunk.css.map": "/github.io/week5-assignemnt/static/css/main.02e52eed.chunk.css.map",
-    "static/js/2.78950811.chunk.js.LICENSE.txt": "/github.io/week5-assignemnt/static/js/2.78950811.chunk.js.LICENSE.txt"
+    "main.css": "/week5-assignment/static/css/main.02e52eed.chunk.css",
+    "main.js": "/week5-assignment/static/js/main.6946044b.chunk.js",
+    "main.js.map": "/week5-assignment/static/js/main.6946044b.chunk.js.map",
+    "runtime-main.js": "/week5-assignment/static/js/runtime-main.247697d2.js",
+    "runtime-main.js.map": "/week5-assignment/static/js/runtime-main.247697d2.js.map",
+    "static/js/2.78950811.chunk.js": "/week5-assignment/static/js/2.78950811.chunk.js",
+    "static/js/2.78950811.chunk.js.map": "/week5-assignment/static/js/2.78950811.chunk.js.map",
+    "index.html": "/week5-assignment/index.html",
+    "precache-manifest.69e0f5dc5c6f9e94406ac99387a6bdd5.js": "/week5-assignment/precache-manifest.69e0f5dc5c6f9e94406ac99387a6bdd5.js",
+    "service-worker.js": "/week5-assignment/service-worker.js",
+    "static/css/main.02e52eed.chunk.css.map": "/week5-assignment/static/css/main.02e52eed.chunk.css.map",
+    "static/js/2.78950811.chunk.js.LICENSE.txt": "/week5-assignment/static/js/2.78950811.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.8e7dc6dd.js",
+    "static/js/runtime-main.247697d2.js",
     "static/js/2.78950811.chunk.js",
     "static/css/main.02e52eed.chunk.css",
-    "static/js/main.15d19601.chunk.js"
+    "static/js/main.6946044b.chunk.js"
   ]
 }
