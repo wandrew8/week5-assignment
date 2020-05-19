@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/characters-serach/static/css/main.02e52eed.chunk.css",
-    "main.js": "/characters-serach/static/js/main.907b4b93.chunk.js",
-    "main.js.map": "/characters-serach/static/js/main.907b4b93.chunk.js.map",
-    "runtime-main.js": "/characters-serach/static/js/runtime-main.b16c50b8.js",
-    "runtime-main.js.map": "/characters-serach/static/js/runtime-main.b16c50b8.js.map",
-    "static/js/2.a27a171a.chunk.js": "/characters-serach/static/js/2.a27a171a.chunk.js",
-    "static/js/2.a27a171a.chunk.js.map": "/characters-serach/static/js/2.a27a171a.chunk.js.map",
-    "index.html": "/characters-serach/index.html",
-    "precache-manifest.a79882344d090bff62a50554fbf762fc.js": "/characters-serach/precache-manifest.a79882344d090bff62a50554fbf762fc.js",
-    "service-worker.js": "/characters-serach/service-worker.js",
-    "static/css/main.02e52eed.chunk.css.map": "/characters-serach/static/css/main.02e52eed.chunk.css.map",
-    "static/js/2.a27a171a.chunk.js.LICENSE.txt": "/characters-serach/static/js/2.a27a171a.chunk.js.LICENSE.txt"
+    "main.css": "/characters-search/static/css/main.02e52eed.chunk.css",
+    "main.js": "/characters-search/static/js/main.011f5488.chunk.js",
+    "main.js.map": "/characters-search/static/js/main.011f5488.chunk.js.map",
+    "runtime-main.js": "/characters-search/static/js/runtime-main.6481dcb6.js",
+    "runtime-main.js.map": "/characters-search/static/js/runtime-main.6481dcb6.js.map",
+    "static/js/2.a27a171a.chunk.js": "/characters-search/static/js/2.a27a171a.chunk.js",
+    "static/js/2.a27a171a.chunk.js.map": "/characters-search/static/js/2.a27a171a.chunk.js.map",
+    "index.html": "/characters-search/index.html",
+    "precache-manifest.d28b17c690dffa7a2cef1af452b1cbf6.js": "/characters-search/precache-manifest.d28b17c690dffa7a2cef1af452b1cbf6.js",
+    "service-worker.js": "/characters-search/service-worker.js",
+    "static/css/main.02e52eed.chunk.css.map": "/characters-search/static/css/main.02e52eed.chunk.css.map",
+    "static/js/2.a27a171a.chunk.js.LICENSE.txt": "/characters-search/static/js/2.a27a171a.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.b16c50b8.js",
+    "static/js/runtime-main.6481dcb6.js",
     "static/js/2.a27a171a.chunk.js",
     "static/css/main.02e52eed.chunk.css",
-    "static/js/main.907b4b93.chunk.js"
+    "static/js/main.011f5488.chunk.js"
   ]
 }
