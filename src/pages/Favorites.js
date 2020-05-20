@@ -18,7 +18,6 @@ export default class Favorites extends Component {
     }
 
     removeFavorite = (id) => {
-        console.log("removing favorite")
         const favorites = JSON.parse(window.localStorage.getItem("favorites"));
         const filteredFavorites = favorites.filter(item => item.id !== id);
         window.localStorage.setItem("favorites", JSON.stringify(filteredFavorites));
@@ -35,7 +34,7 @@ export default class Favorites extends Component {
     render() {
         return (
             <React.Fragment>
-            <NavBar />
+                <NavBar />
                 {this.state.favorites.length > 0 ? null : <div className="message">You have no favorites saved</div> }
                 <main className="cardContainer">
                     { this.state.favorites.length > 0 ? this.state.favorites.map(hero => {

@@ -15,19 +15,16 @@ class CharacterCard extends React.Component {
         removeFavorite: PropTypes.func,
     }
 
+    // Many of the image links from the api are broken. This sets a default image source when image fails to load
     addDefaultSrc = (e) => {
         e.target.src = "http://cdn.collider.com/wp-content/uploads/2018/06/big-hero-6-the-series-11.jpg"
-    }
-
-    createSlug = (name, id) => {
-        return `/hero/${id}/${name.split(" ").join("-")}`;
     }
 
     render() {
          const { name, id, publisher, image, isFavorite } = this.props;
         return(
             <div className="characterCard">
-                <Link to={this.createSlug(name, id)} className="characterImage">
+                <Link to={`/hero/${id}`} className="characterImage">
                     <img onError={this.addDefaultSrc} src={image} alt={name} />
                 </Link>
                 <div className="comicPill">

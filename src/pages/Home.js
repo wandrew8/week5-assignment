@@ -38,7 +38,7 @@ export default class Home extends Component {
             }
             let pages = [];
             while(data.results.length) {
-                pages.push(data.results.splice(0,25))
+                pages.push(data.results.splice(0,24))
             }
             this.setState({ data: pages, savedData: pages, totalPages: pages.length, isLoading: false });
         })
@@ -64,12 +64,14 @@ export default class Home extends Component {
     nextPage = () => {
         if (this.state.currentPage + 1 <= this.state.totalPages) {
             this.setState({ currentPage: this.state.currentPage + 1 });
+            window.scrollTo(0, 0)
         }
     }
 
     prevPage = () => {
         if(this.state.currentPage - 1 > 0) {
             this.setState({ currentPage: this.state.currentPage - 1 });
+            window.scrollTo(0, 0)
         }
     }
 
